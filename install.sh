@@ -25,7 +25,7 @@ echo "✅ meta-ads-mcp installed"
 # 3. Ask for the token
 echo ""
 echo "Please paste the Meta Ads access token (input is hidden):"
-read -rs META_TOKEN
+read -rs META_TOKEN < /dev/tty
 echo ""
 
 if [ -z "$META_TOKEN" ]; then
